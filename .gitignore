@@ -29,7 +29,7 @@ npm-debug.log*
 /platforms
 /plugins
 /www
-/ios
+ios
 ios/App/App.xcodeproj/project.pbxproj
 ios/App/App.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 ios/App/App.xcworkspace/contents.xcworkspacedata
