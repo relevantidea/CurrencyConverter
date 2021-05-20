@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Rates</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list inset="true">
+    <ion-item>
+      <ion-input slot="start" [(ngModel)]="amount" clearOnEdit="true" inputmode="numeric" (ionChange)="amountChanged($event)" debounce="1000"></ion-input>
+      <ion-label>EUR</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <app-currency-card *ngFor="let rate of rates" [data]="rate"></app-currency-card>
+
+</ion-content>

@@ -1,0 +1,25 @@
+<ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label class="currencyLabel">{{data.query.to}}</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="ion-text-center" lines="none">
+          <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item class="ion-no-padding" lines="none">
+          <div>
+            <!-- <div><ion-label padding="none" class="converted"> {{data.result | currency:'"USD"':true:"1.2"}} </ion-label></div> -->
+            <div><ion-label padding="none" class="convertedRate"> {{data.result | number}} </ion-label></div>
+            <div class="translatedRate ion-text-nowrap">1 EUR = {{data.info.rate | number}} {{data.query.to}}</div>
+          </div>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
